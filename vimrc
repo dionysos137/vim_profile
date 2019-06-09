@@ -15,6 +15,8 @@ set showmatch           " highlight matching [{()}]
 nnoremap j gj
 nnoremap k gk
 nnoremap gV `[v`]
+"jk is escape
+inoremap jk <Esc> 
 " window nav
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
