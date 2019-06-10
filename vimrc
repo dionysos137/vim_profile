@@ -1,3 +1,5 @@
+let mapleader = " "
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -13,6 +15,19 @@ Plugin 'gmarik/Vundle.vim'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 Plugin 'tmhedberg/SimpylFold'
+let g:SimpylFold_docstring_preview=1
+Plugin 'vim-scripts/indentpython.vim'
+Bundle 'Valloric/YouCompleteMe'
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"Plugin 'klen/python-mode'
+"let g:pymode_python = 'python3'
+"let g:pymode_indent = 1
+"let g:pymode_doc = 1
+"let g:pymode_doc_bind = 'K'
+"let g:pymode_rope_completion = 1
+"let g:pymode_rope_complete_on_dot = 1
+"let g:pymode_rope_completion_bind = '<C-Space>'
 " ...
 
 " All of your Plugins must be added before the following line
@@ -32,7 +47,7 @@ filetype plugin indent on    " required
 
 syntax enable  "enable syntax
 colorscheme codedark
-" Python file format, PEP 8
+"Python file format, PEP 8
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
@@ -40,11 +55,12 @@ au BufNewFile,BufRead *.py
     \ set textwidth=79  |
     \ set expandtab     |
     \ set autoindent    |
-    \ set fileformat=unix
+    \ set fileformat=unix |
+    \ set encoding=utf-8
 
-"set tabstop=4 "number of spaces per tab
-"set softtabstop=4 "num of spaces in tab when editing
-"set expandtab     "<TAB> becomes 4 spaces
+set tabstop=4 "number of spaces per tab
+set softtabstop=4 "num of spaces in tab when editing
+set expandtab     "<TAB> becomes 4 spaces
 set number    "show line numbers
 set showcmd   "show last command in bottom bar
 set guifont=Source\ Code\ Pro 
@@ -57,7 +73,7 @@ set showmatch           " highlight matching [{()}]
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
-nnoremap <space> za
+"nnoremap <space> za
 
 " move vertically by visual line
 nnoremap j gj
