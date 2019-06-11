@@ -28,6 +28,8 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "let g:pymode_rope_completion = 1
 "let g:pymode_rope_complete_on_dot = 1
 "let g:pymode_rope_completion_bind = '<C-Space>'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'nvie/vim-flake8'
 " ...
 
 " All of your Plugins must be added before the following line
