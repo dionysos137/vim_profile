@@ -92,3 +92,5 @@ set splitbelow
 set splitright
 "scroll up by oneline
 nnoremap <C-R> <C-Y>
+nnoremap o o<Esc>
+nnoremap O O<Esc>
