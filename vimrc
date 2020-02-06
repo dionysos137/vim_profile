@@ -48,6 +48,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable  "enable syntax
+"let g:sierra_Midnight = 1
 colorscheme codedark
 "Python file format, PEP 8
 au BufNewFile,BufRead *.py
@@ -82,7 +83,7 @@ nnoremap j gj
 nnoremap k gk
 nnoremap gV `[v`]
 "jk is escape
-inoremap jk <Esc> 
+inoremap jj <Esc> 
 " window nav
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
