@@ -46,10 +46,10 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
+set t_Co=256
 syntax enable  "enable syntax
 "let g:sierra_Midnight = 1
-colorscheme codedark
+colorscheme molokai "codedark
 "Python file format, PEP 8
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
