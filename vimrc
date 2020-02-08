@@ -48,8 +48,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 set t_Co=256
 syntax enable  "enable syntax
-"let g:sierra_Midnight = 1
-colorscheme molokai "codedark
+let g:sierra_Midnight = 1
+colorscheme sierra "codedark
 "Python file format, PEP 8
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
