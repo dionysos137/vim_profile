@@ -95,3 +95,8 @@ set splitright
 nnoremap <C-R> <C-Y>
 nnoremap o o<Esc>
 nnoremap O O<Esc>
+" copy to system
+nnoremap y "*y
+"nnoremap yy "*yy
+nnoremap p "*p
+
