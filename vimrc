@@ -11,7 +11,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
+Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'bfrg/vim-cpp-modern'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 Plugin 'tmhedberg/SimpylFold'
@@ -28,7 +29,7 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "let g:pymode_rope_completion = 1
 "let g:pymode_rope_complete_on_dot = 1
 "let g:pymode_rope_completion_bind = '<C-Space>'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'nvie/vim-flake8'
 " ...
 
@@ -48,8 +49,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 set t_Co=256
 syntax enable  "enable syntax
-let g:sierra_Midnight = 1
-colorscheme sierra "codedark
+"let g:sierra_Midnight = 1
+"colorscheme  monokai "sierra codedark
 "Python file format, PEP 8
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -67,7 +68,7 @@ set expandtab     "<TAB> becomes 4 spaces
 set number    "show line numbers
 set showcmd   "show last command in bottom bar
 set guifont=Source\ Code\ Pro 
-set cursorline  "highlight cursorline
+"set cursorline  "highlight cursorline
 filetype indent on      " load filetype-specific indent files
 set wildmenu   "visual auto-complete
 set lazyredraw          " redraw only when we need to.
