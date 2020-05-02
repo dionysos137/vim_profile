@@ -99,5 +99,7 @@ nnoremap O O<Esc>
 " copy to system
 nnoremap y "*y
 "nnoremap yy "*yy
+nnoremap d "*d
+"nnoremap dd "*dd
 nnoremap p "*p
-
+"nnoremap <C-W> <C-A>
